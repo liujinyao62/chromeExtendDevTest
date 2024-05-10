@@ -8,5 +8,10 @@
     "16": "imgs/profilePicture16.png",
     "64": "imgs/profilePicture64.png",
     "128": "imgs/profilePicture128.png"
+  },
+  "browser_action":{
+    "default_icon": "imgs/profilePicture16.png",
+    "default_title": "鼠标悬浮插件提示",
+    "default_popup": "index.html"
   }
 }
