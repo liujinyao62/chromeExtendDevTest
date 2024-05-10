@@ -9,3 +9,5 @@
 2、browser_action中不设置default_icon，最新chrome浏览器将展示灰色的icons中的图片
 
 3、manifest.json中配置background是版本manifest_version2中的属性，3中配置无效，使用getBackgroundPage()无法获取后台页DOM及属性
+
+4、POPUP调用后台页逻辑方法，可直接拿getBackground()获取的bg，然后bg.backJs调用方法

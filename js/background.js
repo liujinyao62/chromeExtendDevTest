@@ -1,3 +1,6 @@
 function backJs() {
-  alert("22222")
+  chrome.tabs.getSelected(null, function(tab){
+    chrome.tabs.executeScript(null, {code:'javascript:alert("'+ tab.title +'")'})
+  })
+  // alert("background html")
 }
