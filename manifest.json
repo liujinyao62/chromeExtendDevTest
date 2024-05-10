@@ -1,12 +1,12 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "chromeExtendPlug",
-  "verson": "1.0",
+  "version": "1.0",
   "description": "插件开发试验品1.0",
   "author": "LY",
   "icons": {
-    "16": "",
-    "64": "",
-    "128": ""
+    "16": "imgs/profilePicture16.png",
+    "64": "imgs/profilePicture64.png",
+    "128": "imgs/profilePicture128.png"
   }
 }
