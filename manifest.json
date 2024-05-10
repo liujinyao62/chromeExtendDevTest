@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "chromeExtendPlug",
   "version": "1.0",
   "description": "插件开发试验品1.0",
@@ -9,9 +9,12 @@
     "64": "imgs/profilePicture64.png",
     "128": "imgs/profilePicture128.png"
   },
-  "browser_action":{
+  "browser_action": {
     "default_icon": "imgs/profilePicture16.png",
     "default_title": "鼠标悬浮插件提示",
     "default_popup": "index.html"
+  },
+  "background": {
+    "page": "background.html"
   }
 }
