@@ -10,7 +10,7 @@ function backJs() {
 function autoSeachValue() {
   chrome.tabs.getSelected(null, function(tab) {
     var webUrl = window.location;
-    if (webUrl == 'https://baidu.com/') {
+    if (webUrl.href == 'https://baidu.com/') {
       chrome.tabs.executeScript(null, {code: 'javascript: var bdSeachId = document.querySelector("#kw"); bdSeachId.value="chrome插件"; var buttonId = document.querySelector("#su").click()'})
     } else {
       alert("百度页面点击查询")
