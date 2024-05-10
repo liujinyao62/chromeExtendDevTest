@@ -15,4 +15,10 @@ $(function() {
     bg.document.title = newTitle
     alert(bg.document.title)
   })
+
+  // POPUP调用后台页backJs方法
+  $("#callBakcJs").click( e => {
+    var bg = chrome.extension.getBackgroundPage()
+    bg.backJs();
+  })
 })

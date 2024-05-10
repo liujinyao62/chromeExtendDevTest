@@ -16,5 +16,11 @@
   },
   "background": {
     "page": "background.html"
-  }
+  },
+  "permissions": [
+    "tabs",
+    "*://*/*",
+    "http://*/*",
+    "https://*/*"
+  ]
 }
