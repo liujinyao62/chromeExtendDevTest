@@ -21,4 +21,10 @@ $(function() {
     var bg = chrome.extension.getBackgroundPage()
     bg.backJs();
   })
+
+  // POPUP调用后台页 百度自动搜索内容 方法
+  $("#baiduSeachValueAuto").click( e => {
+    var bg = chrome.extension.getBackgroundPage()
+    bg.autoSeachValue();
+  })
 })
