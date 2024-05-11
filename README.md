@@ -11,3 +11,20 @@
 3、manifest.json中配置background是版本manifest_version2中的属性，3中配置无效，使用getBackgroundPage()无法获取后台页DOM及属性
 
 4、POPUP调用后台页逻辑方法，可直接拿getBackground()获取的bg，然后bg.backJs调用方法
+
+5、content_scripts是注入脚本，
+
+              "content_scripts": [
+                  {
+                    <!-- 所有路径 -->
+                    "matches": ["<all_urls>"],
+
+                    <!-- 注入的脚本 举例：["/js/baidu.js"、"/js/baidu.js"] -->
+                    "js": ["/js/baidu.js"],
+
+                    <!-- 初始加载时 -->
+                    "run_at": "document_start"
+                  }
+                ]
+
+6、
