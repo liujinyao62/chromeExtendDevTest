@@ -1,6 +1,6 @@
 # chromeExtendDevTest
 
-####  chrome插件开发代码
+####  chrome插件开发代码说明
 
 开发说明:
 
