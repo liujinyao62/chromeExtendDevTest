@@ -47,4 +47,15 @@ $(function() {
       "color": [0, 255, 0, 0]
     })
   })
+
+  // 浏览器桌面通知
+  $("#popNotify").click( e => {
+    chrome.notifications.create({
+      title: "插件通知",
+      type: 'image',
+      iconUrl: 'imgs/profilePicture16.png',
+      message: '此处为通知内容',
+      imageUrl: 'imgs/dektopWall.png'
+    })
+  })
 })

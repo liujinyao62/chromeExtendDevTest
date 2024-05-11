@@ -35,8 +35,10 @@
 
 8、chrome_url_overrides设置新标签路径页面 newtab: newTab.html
 
+9、"notifications"，chromeAPI为桌面通知api，chrome.notifications.create({})
 
-9、V2 => V3改动
+
+@@@、V2 => V3改动
 
   （1）插件背景页，background.page或者background.scripts都是2版本及以下适用的，3版本及以上改为服务 service_workers
   （2）browser_action 改为 action

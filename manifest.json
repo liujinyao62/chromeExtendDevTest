@@ -20,7 +20,8 @@
   
   "permissions": [
     "contextMenus",
-    "tabs"
+    "tabs",
+    "notifications"
   ],
   "host_permissions": [
     "*://*/*",
