@@ -27,4 +27,24 @@ $(function() {
     var bg = chrome.extension.getBackgroundPage()
     bg.autoSeachValue();
   })
+
+  // 显示插件状态
+  $("#showBadge").click( e => {
+    chrome.action.setBadgeText({
+      "text": '在线'
+    })
+    chrome.action.setBadgeBackgroundColor({
+      "color": [0, 255, 0, 100]
+    })
+  })
+
+  // 隐藏插件状态
+  $("#hideBadge").click( e => {
+    chrome.action.setBadgeText({
+      "text": ''
+    })
+    chrome.action.setBadgeBackgroundColor({
+      "color": [0, 255, 0, 0]
+    })
+  })
 })
