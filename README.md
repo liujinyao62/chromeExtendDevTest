@@ -12,7 +12,9 @@
 
 4、POPUP调用后台页逻辑方法，可直接拿getBackground()获取的bg，然后bg.backJs调用方法
 
-5、content_scripts是注入脚本，
+5、"permissions"，配置权限功能，在权限配置中配置tabs，可以使用标签相关，配置"contextMenus",可以使用右键菜单相关功能
+
+6、content_scripts是注入脚本，
 
               "content_scripts": [
                   {
@@ -27,4 +29,4 @@
                   }
                 ]
 
-6、
+7、
