@@ -29,4 +29,6 @@
                   }
                 ]
 
-7、
+7、chrome.contextMenus.create配置事件中：
+        documentUrlPatterns: ["https://*.baidu.com/*"]，表示只针对特定页面展示右键菜单；
+        contexts: ["editable", "selection"]，表示只在编辑框及托选文本中右键展示菜单
