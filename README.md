@@ -32,3 +32,12 @@
 7、chrome.contextMenus.create配置事件中：
         documentUrlPatterns: ["https://*.baidu.com/*"]，表示只针对特定页面展示右键菜单；
         contexts: ["editable", "selection"]，表示只在编辑框及托选文本中右键展示菜单
+
+8、chrome_url_overrides设置新标签路径页面 newtab: newTab.html
+
+
+9、V2 => V3改动
+
+  （1）插件背景页，background.page或者background.scripts都是2版本及以下适用的，3版本及以上改为服务 service_workers
+  （2）browser_action 改为 action
+  （3）V2中chromeAPI权限和主机权限是一起在permissions配置的，但是V3中是分离的，分别是permissions配置chromeAPI，host_permissions是配置主机权限
